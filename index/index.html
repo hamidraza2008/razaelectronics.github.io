@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg">
+    
+  </div>
+  <div class="key">
+  <div id="piano">
+    <div class="key1" data-key="65">A</div>
+    <div class="key2" data-key="83">S</div>
+    <div class="key3" data-key="68">D</div>
+    <div class="key4" data-key="70">F</div>
+    <div class="key5" data-key="71">G</div>
+    <div class="key6" data-key="72">H</div>
+    <div class="key7" data-key="74">J</div>
+    <div class="key8" data-key="75">K</div><!---->
+    <div class="key9" data-key="76">L</div>
+
+  </div>
+</div>
+
+  <audio data-key="65" src="file:///C:/Users/Al-Rahman-Computer/Downloads/sol-101774.mp3"></audio>
+  <audio data-key="83" src="file:///C:/Users/Al-Rahman-Computer/Downloads/re-78500.mp3"></audio>
+  <audio data-key="68" src="file:///C:/Users/Al-Rahman-Computer/Downloads/si-80238.mp3"></audio>
+  <audio data-key="70" src="file:///C:/Users/Al-Rahman-Computer/Downloads/do-80236.mp3"></audio>
+  <audio data-key="71" src="file:///C:/Users/Al-Rahman-Computer/Downloads/bicycle-bell_19-80368.mp3"></audio>
+  <audio data-key="72" src="file:///C:/Users/Al-Rahman-Computer/Downloads/sol-101774.mp3"></audio>
+  <audio data-key="74" src="file:///C:/Users/Al-Rahman-Computer/Downloads/piano-g-6200.mp3"></audio>
+  <audio data-key="75" src="file:///C:/Users/Al-Rahman-Computer/Downloads/piano-g-6200.mp3"></audio>
+  <audio data-key="76" src="file:///C:/Users/Al-Rahman-Computer/Downloads/piano-g-6200.mp3"></audio>
+  <audio data-key="77" src="file:///C:/Users/Al-Rahman-Computer/Downloads/piano-g-6200.mp3"></audio>
+  <audio data-key="78" src="file:///C:/Users/Al-Rahman-Computer/Downloads/piano-g-6200.mp3"></audio>
+  <audio data-key="79" src="file:///C:/Users/Al-Rahman-Computer/Downloads/piano-g-6200.mp3"></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#piano {
+  display: flex;
+  font-size: 2px;
+}
+
+.key1 {
+  margin-right: 10px;
+  border: 1px solid #f8fc03;
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  background: linear-gradient(to right, #ffb428, #ffffff);
+transition: 0.5s;
+  border-radius: 4px;
+  
+}
+.key1:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);
+  transition: 0.2s;
+  border-radius: 8px;
+  
+}
+.key2:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key3:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key4:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key5:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key6:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key7:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key8:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key9:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key10:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key11:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key12:hover{
+  background: linear-gradient(to right, #2808b4, #ffffff);}
+.key2 {
+  margin-right: 10px;
+background: linear-gradient(to right, #08b46c, #ffffff);
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key3 {
+  margin-right: 10px;
+  background: linear-gradient(to right, #ffb428, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key4 {
+  margin-right: 10px;
+  background: linear-gradient(to right, #7328ff, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key5 {
+  margin-right: 10px;
+  background: linear-gradient(to right, #f828ff, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key6 {
+  margin-right: 10px;
+  background: linear-gradient(to right, #ff4128, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key8 {
+  margin-right: 10px;
+  background: linear-gradient(to right, #ffb428, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key9 {
+  margin-right: 10px;
+  background: linear-gradient(to right, #28ffe2, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key10{
+  margin-right: 10px;
+  background: linear-gradient(to right, #3aff28, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key11 {
+  margin-right: 10px;
+  background: linear-gradient(to right, #ffb428, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+.key12 {
+  margin-right: 10px;
+  background: linear-gradient(to right, #ff2857, #ffffff);
+
+  width: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e7dcdc;
+}
+
+.key.active {
+  background-color: #ccc;
+}
+
+.bg{
+  position: absolute;
+  padding:120px 280px;
+  border: 3px solid rgb(0, 0, 0);
+  z-index: -1; 
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+</style>
+<script>
+    const keys = document.querySelectorAll('.key');
+
+window.addEventListener('keydown', playSound);
+
+keys.forEach(key => key.addEventListener('click', playSound));
+
+function playSound(event) {
+  let audio;
+  let key;
+
+  if (event.type === 'keydown') {
+    audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+    key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
+  } else if (event.type === 'click') {
+    const keyData = event.target.getAttribute('data-key');
+    audio = document.querySelector(`audio[data-key="${keyData}"]`);
+    key = event.target;
+  }
+
+  if (!audio) return;
+
+  audio.currentTime = 0;
+  audio.play();
+  key.classList.add('active');
+
+  audio.addEventListener('ended', () => {
+    key.classList.remove('active');
+  });
+}
+
+</script>
